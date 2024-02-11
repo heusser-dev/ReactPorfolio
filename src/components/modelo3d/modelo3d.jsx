@@ -1,11 +1,10 @@
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 
 const Modelo3d = () => {
   const mountRef = useRef(null);
-  const [keysPressed, setKeysPressed] = useState({});
 
   useEffect(() => {
     // Data from the canvas
@@ -45,28 +44,9 @@ const Modelo3d = () => {
       model.rotation.y = Math.PI / 2; // Rotate 90 degrees initially
     });
 
-    // Event listeners for keyboard input
-    const handleKeyDown = (event) => {
-      setKeysPressed((prevState) => ({
-        ...prevState,
-        [event.key]: true,
-      }));
-    };
-
-    const handleKeyUp = (event) => {
-      setKeysPressed((prevState) => ({
-        ...prevState,
-        [event.key]: false,
-      }));
-    };
-
-    window.addEventListener("keydown", handleKeyDown);
-    window.addEventListener("keyup", handleKeyUp);
-
     // Animate the scene
     const animate = () => {
       orbitControls.update();
-      updateCameraPosition();
       renderer.render(scene, camera);
       requestAnimationFrame(animate);
 
@@ -83,31 +63,11 @@ const Modelo3d = () => {
     const ambientalLight = new THREE.AmbientLight(0xffffff, 2);
     scene.add(ambientalLight);
 
-    // Update camera position based on keys pressed
-    const updateCameraPosition = () => {
-      const speed = 0.1;
-
-      if (keysPressed["ArrowUp"] || keysPressed["w"]) {
-        camera.position.z -= speed;
-      }
-      if (keysPressed["ArrowDown"] || keysPressed["s"]) {
-        camera.position.z += speed;
-      }
-      if (keysPressed["ArrowLeft"] || keysPressed["a"]) {
-        camera.position.x -= speed;
-      }
-      if (keysPressed["ArrowRight"] || keysPressed["d"]) {
-        camera.position.x += speed;
-      }
-    };
-
     return () => {
       window.removeEventListener("resize", resize);
-      window.removeEventListener("keydown", handleKeyDown);
-      window.removeEventListener("keyup", handleKeyUp);
       currentRef.removeChild(renderer.domElement);
     };
-  }, [keysPressed]);
+  }, []);
 
   return (
     <div className='w-full h-48 mx-auto' ref={mountRef}></div>
