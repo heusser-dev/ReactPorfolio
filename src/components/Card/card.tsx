@@ -11,8 +11,8 @@ const ComponenteConModelo3D = () => {
         <h1 className="text-3xl font-bold ml-4">JUAN PABLO HEUSSER
           ESCAMILLA</h1>
       </div>
-      <div className="flex flex-wrap">
-        <div className="w-full md:w-full md:pr-5 mb-5 mr-auto">
+      <div className="flex flex-wrap px-4">
+        <div className="w-full md:w-full md:pr-5 mb-5 mr-auto bg-white bg-opacity-40 rounded-lg ">
           <p className="text-lg mt-2 ml-4">
             Desarrollador Full Stack con experiencia en Angular, Redux, NestJS, AWS ,
             ERP(odoo) y MongoDB, utilizando JavaScript y TypeScript para construir
@@ -26,14 +26,13 @@ const ComponenteConModelo3D = () => {
 
       </div>
 
-      <div className="w-full  ">
-      </div>
+
       <div className='container'>
 
         <h1 className="text-3xl font-bold ml-4">HABILIDADES</h1>
       </div>
-      <div className="flex flex-wrap">
-        <div className="w-full md:w-full md:pr-5 mb-5 mr-auto">
+      <div className="flex flex-wrap px-4">
+      <div className="w-full md:w-full md:pr-5 mb-5 mr-auto bg-white bg-opacity-40 rounded-lg ">
           <p className="text-lg mt-2 ml-4">
             Diseño de UI/UX: frameworks JavaScript, HTML5, CSS, Tailwind CSS y similares.
             Desarrollo Back-End: TypeScript (NestJS, Express), Python (Django).
@@ -48,14 +47,13 @@ const ComponenteConModelo3D = () => {
 
       </div>
 
-      <div className="w-full  ">
-      </div>
+      
       <div className='container'>
 
         <h1 className="text-3xl font-bold ml-4">2023- HOY | DESARROLLO FULL STACKS JUNIOR | SAVIA (FRESH SPA)</h1>
       </div>
-      <div className="flex flex-wrap">
-        <div className="w-full md:w-full md:pr-5 mb-5 mr-auto">
+      <div className="flex flex-wrap px-4">
+      <div className="w-full md:w-full md:pr-5 mb-5 mr-auto bg-white bg-opacity-40 rounded-lg ">
           <p className="text-lg mt-2 ml-4">
             Como desarrollador utilicé tecnologías como Angular, Ngrx, Ngx, Tailwind CSS,
             NestJS, TypeScript y MongoDB para llevar el sistema de ventas y gestion interna
@@ -67,6 +65,38 @@ const ComponenteConModelo3D = () => {
         </div>
 
       </div>
+      <div className='container'>
+
+        <h1 className="text-3xl font-bold ml-4">2022- 2023 | DESAROLLO FREE LANCE - PYTHON</h1>
+      </div>
+      <div className="flex flex-wrap px-4">
+      <div className="w-full md:w-full md:pr-5 mb-5 mr-auto bg-white bg-opacity-40 rounded-lg ">
+          <p className="text-lg mt-2 ml-4">
+          Como desarrollador freelance en Django, he colaborado con particulares para
+ofrecer soluciones web personalizadas y efectivas. Mis responsabilidades
+incluyen el diseño, desarrollo e implementación de aplicaciones web adaptadas
+a las necesidades individuales de los clientes.
+          </p>
+        </div>
+
+      </div>
+
+      <div className='container'>
+
+<h1 className="text-3xl font-bold ml-4">2020 - 2022 | WEB MASTER -EMPRENDIMIENTO</h1>
+</div>
+<div className="flex flex-wrap px-4">
+<div className="w-full md:w-full md:pr-5 mb-5 mr-auto bg-white bg-opacity-40 rounded-lg ">
+  <p className="text-lg mt-2 ml-4">
+  Diseñé, implementé y gestioné una tienda en línea basada en WooCommerce,
+asegurando una experiencia de compra fluida y segura. Además, lideré
+estrategias de redes sociales para aumentar la participación del usuario y la
+visibilidad de la marca.
+  </p>
+</div>
+
+</div>
+
 
     </div>
   );
