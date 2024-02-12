@@ -35,7 +35,7 @@ const Modelo3d = () => {
     window.addEventListener("resize", resize);
 
     const gltfLoader = new GLTFLoader();
-    gltfLoader.load('./models/man/scene.gltf', (gltf) => {
+    gltfLoader.load('./models/female/scene.gltf', (gltf) => {
       const model = gltf.scene;
       model.scale.set(0.3, 0.3, 0.3); // Ajusta los valores según sea necesario
       scene.add(model);
@@ -70,7 +70,7 @@ const Modelo3d = () => {
   }, []);
 
   return (
-    <div className='w-full h-48 mx-auto' ref={mountRef}></div>
+    <div className='w-full h-56 ml-0' ref={mountRef}></div>
   );
 };
 
