@@ -28,6 +28,7 @@ const App: React.FC = () => {
               Sider
             </Sider>
             <ComponenteConModelo3D />
+ <ComponenteConModelo3D />
           </div>
         </Content>
       </Layout>
