@@ -13,7 +13,7 @@ function CustomHeader() {
 
   return (
 
-    <div className=" sticky top-0 z-40  bg-transparent w-screen">
+    <div className=" fixed top-0 z-40  bg-transparent w-screen">
     <div className="container px-4">
     <Navbar />
       {/* Contenido del encabezado */}
