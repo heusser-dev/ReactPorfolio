@@ -19,7 +19,8 @@ const items = new Array(3).fill(null).map((_, index) => ({
 
 const App: React.FC = () => {
   return (
-    <Layout>
+    <div className="custom-cursor">
+    <Layout >
       <CustomHeader/>
       <Layout>
       <Content>
@@ -38,6 +39,8 @@ const App: React.FC = () => {
         Ant Design ©{new Date().getFullYear()} Created by heusser-dev
       </Footer>
     </Layout>
+
+    </div>
   );
 };
 
