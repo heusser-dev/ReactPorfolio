@@ -6,10 +6,11 @@ import { Card } from 'antd';
 import Modelo3d from './components/modelo3d/modelo3d';
 import ComponenteConModelo3D from './components/Card/card';
 import Sider from 'antd/es/layout/Sider';
+import CustomHeader from './components/Custom-Header/customHeader';
+import './App.css'; 
 const { Header, Content, Footer } = Layout;
 
 const { Meta } = Card;
-
 const items = new Array(3).fill(null).map((_, index) => ({
   key: String(index + 1),
   label: `nav ${index + 1}`,
@@ -18,16 +19,19 @@ const items = new Array(3).fill(null).map((_, index) => ({
 const App: React.FC = () => {
   return (
     <Layout>
-      <Header className="sticky top-0 z-10 w-full flex items-center bg-sky-900 text-white p-4">
-        <Navbar />
-      </Header>
+      <CustomHeader/>
       <Layout>
-        <Content>
-          <div className="md:flex">
-            <Sider className="md:w-1/4">
+        <Content style={{backgroundImage: "url('./public/images/fondo.jpg"}}>
+
+          <div className="min-h-screen bg-cover bg-center flex items-center justify-center">
+          <img src="/fondo.jpg" alt="Descripción de la imagen" />
+          <img src="/starfall-gif-46.gif" alt="Descripción de la imagen" />
+
+            {/* <Sider className="md:w-1/4">
               Sider
-            </Sider>
-            <ComponenteConModelo3D />
+            </Sider> */}
+            {/* <ComponenteConModelo3D /> */}
+            {/* <ComponenteConModelo3D /> */}
           </div>
         </Content>
       </Layout>
