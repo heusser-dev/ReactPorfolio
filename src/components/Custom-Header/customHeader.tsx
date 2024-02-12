@@ -5,7 +5,6 @@ import Navbar from '../Header/navbar';
 const { Header } = Layout;
 
 function CustomHeader() {
-  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
    
@@ -13,7 +12,7 @@ function CustomHeader() {
 
   return (
 
-    <div className=" fixed top-0 z-40  bg-transparent w-screen">
+    <div className=" fixed top-0 z-40 w-screen">
     <div className="container px-4">
     <Navbar />
       {/* Contenido del encabezado */}

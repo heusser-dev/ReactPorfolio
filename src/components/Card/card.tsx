@@ -2,7 +2,7 @@ import React from 'react';
 import Modelo3d from '../modelo3d/modelo3d';
 const ComponenteConModelo3D = () => {
   return (
-    <div className="container z-40 w-11/12 h-auto  ml-auto mr-auto mt-8 mb-4 bg-white bg-opacity-10 rounded-lg">
+    <div className="container z-40 w-11/12 h-auto  ml-auto mr-auto mt-8 mb-4 bg-white bg-opacity-20 rounded-lg">
       <div className="w-full  ">
         <Modelo3d />
       </div>

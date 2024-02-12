@@ -70,7 +70,7 @@ const Modelo3d = () => {
   }, []);
 
   return (
-    <div className='w-full h-auto ml-0 mr-0' ref={mountRef}></div>
+    <div className='w-full h-60 ml-0 mr-0' ref={mountRef}></div>
   );
 };
 
