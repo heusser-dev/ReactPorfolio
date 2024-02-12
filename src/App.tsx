@@ -21,7 +21,7 @@ const App: React.FC = () => {
   return (
     <div className="custom-cursor">
       <CustomHeader/>
-          <div className=" bg-cover z-30 bg-center w-screen flex items-center justify-center">
+          <div className=" bg-cover z-20 bg-center w-screen flex items-center justify-center">
           <ParticleBackground />
           <ComponenteConModelo3D />
 
@@ -29,7 +29,7 @@ const App: React.FC = () => {
               Sider
             </Sider> */}
             {/* <ComponenteConModelo3D /> */}
-      <div className="text-center fixed  z-20 bottom-0 container bg-white ">
+      <div className="text-center fixed  z-50 bottom-0 container bg-white ">
        Created by heusser-dev ©{new Date().getFullYear()}
       </div>
           </div>
