@@ -35,7 +35,7 @@ const Modelo3d = () => {
     window.addEventListener("resize", resize);
 
     const gltfLoader = new GLTFLoader();
-    gltfLoader.load('./models/man/scene.gltf', (gltf) => {
+    gltfLoader.load('./models/compass/scene.gltf', (gltf) => {
       const model = gltf.scene;
       model.scale.set(0.3, 0.3, 0.3); // Ajusta los valores según sea necesario
       scene.add(model);

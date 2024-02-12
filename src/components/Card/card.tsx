@@ -8,7 +8,7 @@ const ComponenteConModelo3D = () => {
       </div>
       <div className='container'>
 
-        <h1 className="text-3xl font-bold ml-4">JUAN PABLO HEUSSER
+        <h1 className="text-3xl font-bold ml-4 mb-2 ">JUAN PABLO HEUSSER
           ESCAMILLA</h1>
       </div>
       <div className="flex flex-wrap px-4">
@@ -29,7 +29,7 @@ const ComponenteConModelo3D = () => {
 
       <div className='container'>
 
-        <h1 className="text-3xl font-bold ml-4">HABILIDADES</h1>
+        <h1 className="text-3xl font-bold ml-4 mb-2">HABILIDADES</h1>
       </div>
       <div className="flex flex-wrap px-4">
       <div className="w-full md:w-full md:pr-5 mb-5 mr-auto bg-white bg-opacity-60 rounded-lg ">
@@ -50,7 +50,7 @@ const ComponenteConModelo3D = () => {
       
       <div className='container'>
 
-        <h1 className="text-3xl font-bold ml-4">2023- HOY | DESARROLLO FULL STACKS JUNIOR | SAVIA (FRESH SPA)</h1>
+        <h1 className="text-3xl font-bold ml-4 mb-2">2023- HOY | DESARROLLO FULL STACKS JUNIOR | SAVIA (FRESH SPA)</h1>
       </div>
       <div className="flex flex-wrap px-4">
       <div className="w-full md:w-full md:pr-5 mb-5 mr-auto bg-white bg-opacity-60 rounded-lg ">
@@ -67,7 +67,7 @@ const ComponenteConModelo3D = () => {
       </div>
       <div className='container'>
 
-        <h1 className="text-3xl font-bold ml-4">2022- 2023 | DESAROLLO FREE LANCE - PYTHON</h1>
+        <h1 className="text-3xl font-bold ml-4 mb-2">2022- 2023 | DESAROLLO FREE LANCE - PYTHON</h1>
       </div>
       <div className="flex flex-wrap px-4">
       <div className="w-full md:w-full md:pr-5 mb-5 mr-auto bg-white bg-opacity-60 rounded-lg ">
@@ -83,7 +83,7 @@ a las necesidades individuales de los clientes.
 
       <div className='container'>
 
-<h1 className="text-3xl font-bold ml-4">2020 - 2022 | WEB MASTER -EMPRENDIMIENTO</h1>
+<h1 className="text-3xl font-bold ml-4 mb-2">2020 - 2022 | WEB MASTER -EMPRENDIMIENTO</h1>
 </div>
 <div className="flex flex-wrap px-4">
 <div className="w-full md:w-full md:pr-5 mb-5 mr-auto bg-white bg-opacity-60 rounded-lg ">
