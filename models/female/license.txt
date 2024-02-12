@@ -1,0 +1,8 @@
+Model Information:
+* title:	Female base mesh posed free 3d model
+* source:	https://sketchfab.com/3d-models/female-base-mesh-posed-free-3d-model-1fb5446027ee4491a62ad945386191bd
+* author:	SculptCuteness (https://sketchfab.com/SculptCuteness)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works
