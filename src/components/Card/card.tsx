@@ -2,7 +2,7 @@ import React from 'react';
 import Modelo3d from '../modelo3d/modelo3d';
 const ComponenteConModelo3D = () => {
   return (
-    <div className="container  w-11/12 h-screen  ml-auto mr-auto mt-8 bg-white rounded-lg">
+    <div className="container z-20 w-11/12 h-screen  ml-auto mr-auto mt-8 bg-transparent rounded-lg">
         <div className='container  border-b-2'>
 
       <h1 className="text-3xl font-bold ml-4">Ant Design Component</h1>

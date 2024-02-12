@@ -8,6 +8,7 @@ import ComponenteConModelo3D from './components/Card/card';
 import Sider from 'antd/es/layout/Sider';
 import CustomHeader from './components/Custom-Header/customHeader';
 import './App.css'; 
+import ParticleBackground from './components/particles/particles';
 const { Header, Content, Footer } = Layout;
 
 const { Meta } = Card;
@@ -21,16 +22,14 @@ const App: React.FC = () => {
     <Layout>
       <CustomHeader/>
       <Layout>
-        <Content style={{backgroundImage: "url('./public/images/fondo.jpg"}}>
-
+      <Content>
           <div className="min-h-screen bg-cover bg-center flex items-center justify-center">
-          <img src="/fondo.jpg" alt="Descripción de la imagen" />
-          <img src="/starfall-gif-46.gif" alt="Descripción de la imagen" />
+          <ParticleBackground />
 
             {/* <Sider className="md:w-1/4">
               Sider
             </Sider> */}
-            {/* <ComponenteConModelo3D /> */}
+            <ComponenteConModelo3D />
             {/* <ComponenteConModelo3D /> */}
           </div>
         </Content>
