@@ -12,14 +12,15 @@ function CustomHeader() {
   }, []);
 
   return (
-    <Header
-      className={`sticky top-0 z-30 w-full flex items-center bg-transparent `}
-    >
 
-      <Navbar />
+    <div className=" sticky top-0 z-40  bg-transparent w-screen">
+    <div className="container px-4">
+    <Navbar />
       {/* Contenido del encabezado */}
-    </Header>
-  );
+    </div>
+  </div>
+);
+
 }
 
 export default CustomHeader;

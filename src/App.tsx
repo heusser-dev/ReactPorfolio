@@ -20,11 +20,8 @@ const items = new Array(3).fill(null).map((_, index) => ({
 const App: React.FC = () => {
   return (
     <div className="custom-cursor">
-    <Layout >
       <CustomHeader/>
-      <Layout>
-      <Content>
-          <div className=" bg-cover z-30 bg-center flex items-center justify-center">
+          <div className=" bg-cover z-30 bg-center w-screen flex items-center justify-center">
           <ParticleBackground />
           <ComponenteConModelo3D />
 
@@ -32,13 +29,10 @@ const App: React.FC = () => {
               Sider
             </Sider> */}
             {/* <ComponenteConModelo3D /> */}
+      <div className="text-center fixed  z-20 bottom-0 container bg-white ">
+       Created by heusser-dev ©{new Date().getFullYear()}
+      </div>
           </div>
-        </Content>
-      </Layout>
-      <Footer className="text-center z-20">
-        Ant Design ©{new Date().getFullYear()} Created by heusser-dev
-      </Footer>
-    </Layout>
 
     </div>
   );
