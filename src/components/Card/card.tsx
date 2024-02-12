@@ -12,7 +12,7 @@ const ComponenteConModelo3D = () => {
           ESCAMILLA</h1>
       </div>
       <div className="flex flex-wrap px-4">
-        <div className="w-full md:w-full md:pr-5 mb-5 mr-auto bg-white bg-opacity-60 rounded-lg ">
+        <div className="w-full md:w-full md:pr-5 mb-5 mr-auto bg-white bg-opacity-80 rounded-lg ">
           <p className="text-lg mt-2 ml-4">
             Desarrollador Full Stack con experiencia en Angular, Redux, NestJS, AWS ,
             ERP(odoo) y MongoDB, utilizando JavaScript y TypeScript para construir
@@ -32,7 +32,7 @@ const ComponenteConModelo3D = () => {
         <h1 className="text-3xl font-bold ml-4 mb-2">HABILIDADES</h1>
       </div>
       <div className="flex flex-wrap px-4">
-      <div className="w-full md:w-full md:pr-5 mb-5 mr-auto bg-white bg-opacity-60 rounded-lg ">
+      <div className="w-full md:w-full md:pr-5 mb-5 mr-auto bg-white bg-opacity-80 rounded-lg ">
           <p className="text-lg mt-2 ml-4">
             Diseño de UI/UX: frameworks JavaScript, HTML5, CSS, Tailwind CSS y similares.
             Desarrollo Back-End: TypeScript (NestJS, Express), Python (Django).
@@ -53,7 +53,7 @@ const ComponenteConModelo3D = () => {
         <h1 className="text-3xl font-bold ml-4 mb-2">2023- HOY | DESARROLLO FULL STACKS JUNIOR | SAVIA (FRESH SPA)</h1>
       </div>
       <div className="flex flex-wrap px-4">
-      <div className="w-full md:w-full md:pr-5 mb-5 mr-auto bg-white bg-opacity-60 rounded-lg ">
+      <div className="w-full md:w-full md:pr-5 mb-5 mr-auto bg-white bg-opacity-80 rounded-lg ">
           <p className="text-lg mt-2 ml-4">
             Como desarrollador utilicé tecnologías como Angular, Ngrx, Ngx, Tailwind CSS,
             NestJS, TypeScript y MongoDB para llevar el sistema de ventas y gestion interna
@@ -70,7 +70,7 @@ const ComponenteConModelo3D = () => {
         <h1 className="text-3xl font-bold ml-4 mb-2">2022- 2023 | DESAROLLO FREE LANCE - PYTHON</h1>
       </div>
       <div className="flex flex-wrap px-4">
-      <div className="w-full md:w-full md:pr-5 mb-5 mr-auto bg-white bg-opacity-60 rounded-lg ">
+      <div className="w-full md:w-full md:pr-5 mb-5 mr-auto bg-white bg-opacity-80 rounded-lg ">
           <p className="text-lg mt-2 ml-4">
           Como desarrollador freelance en Django, he colaborado con particulares para
 ofrecer soluciones web personalizadas y efectivas. Mis responsabilidades
@@ -86,7 +86,7 @@ a las necesidades individuales de los clientes.
 <h1 className="text-3xl font-bold ml-4 mb-2">2020 - 2022 | WEB MASTER -EMPRENDIMIENTO</h1>
 </div>
 <div className="flex flex-wrap px-4">
-<div className="w-full md:w-full md:pr-5 mb-5 mr-auto bg-white bg-opacity-60 rounded-lg ">
+<div className="w-full md:w-full md:pr-5 mb-5 mr-auto bg-white bg-opacity-80 rounded-lg ">
   <p className="text-lg mt-2 ml-4">
   Diseñé, implementé y gestioné una tienda en línea basada en WooCommerce,
 asegurando una experiencia de compra fluida y segura. Además, lideré
