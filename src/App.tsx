@@ -23,18 +23,18 @@ const App: React.FC = () => {
       <CustomHeader/>
       <Layout>
       <Content>
-          <div className="min-h-screen bg-cover bg-center flex items-center justify-center">
+          <div className=" bg-cover z-30 bg-center flex items-center justify-center">
           <ParticleBackground />
+          <ComponenteConModelo3D />
 
             {/* <Sider className="md:w-1/4">
               Sider
             </Sider> */}
-            <ComponenteConModelo3D />
             {/* <ComponenteConModelo3D /> */}
           </div>
         </Content>
       </Layout>
-      <Footer className="text-center">
+      <Footer className="text-center z-20">
         Ant Design ©{new Date().getFullYear()} Created by heusser-dev
       </Footer>
     </Layout>
