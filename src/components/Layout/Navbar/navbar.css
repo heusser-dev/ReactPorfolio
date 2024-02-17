@@ -1,0 +1,20 @@
+/* Definición de la animación */
+@keyframes borderMove {
+  0% {
+    transform: translateX(0) translateY(0); /* Inicio de la animación */
+  }
+  100% {
+    transform: translateX(100%) translateY(100%); /* Fin de la animación */
+  }
+}
+
+/* Aplicación de la animación al elemento deseado */
+.border-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent; /* Borde transparente */
+  animation: borderMove 2s linear infinite; /* Aplica la animación al borde */
+}
