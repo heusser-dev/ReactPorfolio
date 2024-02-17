@@ -35,7 +35,7 @@ const Modelo3d = () => {
     window.addEventListener("resize", resize);
 
     const gltfLoader = new GLTFLoader();
-    gltfLoader.load('./models/laptop_gamer/scene.gltf', (gltf) => {
+    gltfLoader.load('./models/tete/scene.gltf', (gltf) => {
       const model = gltf.scene;
       model.scale.set(10.0, 10.0, 10.0); // Ajusta los valores según sea necesario
       scene.add(model);
