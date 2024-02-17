@@ -37,7 +37,7 @@ const Modelo3d = () => {
     const gltfLoader = new GLTFLoader();
     gltfLoader.load('./models/tete/scene.gltf', (gltf) => {
       const model = gltf.scene;
-      model.scale.set(10.0, 10.0, 10.0); // Ajusta los valores según sea necesario
+      model.scale.set(80.0, 80.0, 80.0); // Ajusta los valores según sea necesario
       scene.add(model);
       
 

@@ -4,7 +4,7 @@ const ComponenteConModelo3D = () => {
   return (
     <div className="container z-40 w-11/12 h-auto  ml-auto mr-auto  mb-4 mt-28 bg-white bg-opacity-0 rounded-lg">
       <div className="w-full  ">
-        {/* <Modelo3d /> */}
+        <Modelo3d />
       </div>
       <div className='container hover:scale-105 transform transition-transform duration-300'>
 
