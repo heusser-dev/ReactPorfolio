@@ -3,11 +3,31 @@ import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-particles";
 //import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
+import { useMediaQuery } from '@react-hook/media-query';
+interface ChildProps {
+    theme: string;
+  }
+  
 
-const ParticleBackground  = () => {
+const ParticleBackground: React.FC<ChildProps>  = ({ theme }) => {
+    
+    // Definir los colores para modo claro y oscuro fuera del bloque condicional
+    let colorStringDarkMode;
+    let colorStringLightMode;
+    
+    if (theme === 'dark'){
+        colorStringDarkMode = '#0d47a1';  
+        colorStringLightMode = '#ffffff'; 
+    } else {
+        colorStringDarkMode = '#ffffff';  
+        colorStringLightMode = '#0d47a1'; 
+    }
+    
+    // Determinar qué cadena de color utilizar según el modo del navegador
+  
     const particlesInit = useCallback(async (engine: Engine) => {
         console.log(engine);
-
+        
         // you can initialize the tsParticles instance (engine) here, adding custom shapes or presets
         // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
         // starting from v2 you can add only the features you need reducing the bundle size
@@ -19,6 +39,7 @@ const ParticleBackground  = () => {
         await console.log(container);
     }, []);
     return (
+
         <Particles
             id="tsparticles"
             init={particlesInit}
@@ -26,7 +47,7 @@ const ParticleBackground  = () => {
             options={{
                 background: {
                     color: {
-                        value: "#0d47a1",
+                        value: colorStringDarkMode,
                     },
                 },
                 fpsLimit: 120,
@@ -54,10 +75,10 @@ const ParticleBackground  = () => {
                 },
                 particles: {
                     color: {
-                        value: "#ffffff",
+                        value: colorStringLightMode,
                     },
                     links: {
-                        color: "#ffffff",
+                        color: colorStringLightMode,
                         distance: 150,
                         enable: true,
                         opacity: 0.5,
@@ -92,8 +113,9 @@ const ParticleBackground  = () => {
                 },
                 detectRetina: true,
             }}
-        />
-    );
+            />
+
+            );
 };
 
 export default ParticleBackground ;

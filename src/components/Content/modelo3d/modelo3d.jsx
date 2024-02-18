@@ -15,7 +15,7 @@ const Modelo3d = () => {
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(25, width / height, 0.1, 100);
     scene.add(camera);
-    camera.position.set(0, 10,40);
+    camera.position.set(0, 10,10);
     camera.lookAt(new THREE.Vector3());
 
     const renderer = new THREE.WebGLRenderer(({ alpha: true }));
@@ -37,7 +37,7 @@ const Modelo3d = () => {
     const gltfLoader = new GLTFLoader();
     gltfLoader.load('./models/tete/scene.gltf', (gltf) => {
       const model = gltf.scene;
-      model.scale.set(80.0, 80.0, 80.0); // Ajusta los valores según sea necesario
+      model.scale.set(100.0, 100.0, 100.0); // Ajusta los valores según sea necesario
       scene.add(model);
       
 

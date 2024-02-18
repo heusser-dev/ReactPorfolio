@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Breadcrumb, Layout, Menu } from 'antd';
-import Navbar from './components/Layout/Navbar/navbar';
 import Template from './components/Content/modelo3d/modelo3d';
 import { Card } from 'antd';
 import Modelo3d from './components/Content/modelo3d/modelo3d';
@@ -18,12 +17,39 @@ import QRScanner from './components/Apps/Qrscanner/Qrscanner';
 
 
 const App: React.FC = () => {
+  const [theme, setTheme] = useState(() => {
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      return "dark";
+    }
+
+    return "light";
+  });
+
+  useEffect(() => {
+    const htmlElement = document.querySelector("html");
+    if (htmlElement) {
+      if (theme === "dark") {
+        htmlElement.classList.add("dark");
+      } else {
+        htmlElement.classList.remove("dark");
+      }
+    }
+  }, [theme]);
+
+
+  const handleChangeTheme = () => {
+    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+  };
   return (
     <div className="">
       <Router>
-        <CustomHeader />
-        <ParticleBackground />
+        <div>
+          <CustomHeader onChangeTheme={handleChangeTheme} />
+          {/* Otros componentes */}
+        </div>
+        <ParticleBackground theme={theme} />
         <div className=" bg-cover mb-8 z-20 bg-center w-screen flex items-center justify-center">
+
           <Routes>
             <Route path="/" element={<ComponenteConModelo3D />} />
             <Route path="blog" element={<Blog />} />
@@ -34,13 +60,13 @@ const App: React.FC = () => {
           </Routes>
 
         </div>
-      </Router>
-      <div className="text-center fixed z-50 bottom-0 container bg-white">
-        <a href='https://github.com/heusser-dev'>
+        <div className="text-center fixed z-50 bottom-0 container border min-w-full bg-white">
+          <a href='https://github.com/heusser-dev'>
 
-        Created by heusser-dev ©{new Date().getFullYear()}
-        </a>
-      </div>
+            Created by heusser-dev ©{new Date().getFullYear()}
+          </a>
+        </div>
+      </Router>
     </div>
   );
 };
