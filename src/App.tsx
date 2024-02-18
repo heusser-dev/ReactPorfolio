@@ -13,6 +13,9 @@ import Blog from './pages/Blog';
 import Demos from './pages/Demos';
 import About from './pages/Contacto';
 import QRScanner from './components/Apps/Qrscanner/Qrscanner';
+import GithubOutlined from '@ant-design/icons/lib/icons/GithubOutlined';
+import LinkedinOutlined from '@ant-design/icons/lib/icons/LinkedinOutlined';
+import QrScanner from './components/Apps/Qrscanner/Qrscanner';
 
 
 
@@ -43,28 +46,35 @@ const App: React.FC = () => {
   return (
     <div className="">
       <Router>
-        <div>
+        <div className='bt-0'>
           <CustomHeader onChangeTheme={handleChangeTheme} />
           {/* Otros componentes */}
         </div>
         <ParticleBackground theme={theme} />
-        <div className=" bg-cover mb-8 z-20 bg-center w-screen flex items-center justify-center">
+        <div className=" bg-cover mb-0 z-20 bg-center w-full flex items-center justify-center">
 
           <Routes>
             <Route path="/" element={<ComponenteConModelo3D />} />
             <Route path="blog" element={<Blog />} />
             <Route path="about" element={<About />} />
             <Route path="demos" element={<Demos />}>
-              <Route path="qrscanner" element={<QRScanner />} />
-            </Route>
-          </Routes>
+              <Route path="qrscanner" element={<QrScanner />} />
+            </Route>          
+            </Routes>   
 
         </div>
-        <div className="text-center fixed z-50 bottom-0 container border min-w-full bg-white">
-          <a href='https://github.com/heusser-dev'>
+        <div className="text-center fixed z-50 py-1 bottom-0 container border min-w-full bg-white">
+          <a className="" href='https://github.com/heusser-dev'>
 
-            Created by heusser-dev ©{new Date().getFullYear()}
+            Created by heusser-dev
+            {" " + new Date().getFullYear()}
+            <GithubOutlined style={{ fontSize: '24px', marginLeft: "8px", position: 'absolute' }} />
           </a>
+          <a className="" href='https://www.linkedin.com/in/juan-pablo-heusser-escamilla-9a341721a/'>
+
+            <LinkedinOutlined style={{ fontSize: '24px', marginLeft: "40px", position: 'absolute' }} />
+          </a>
+
         </div>
       </Router>
     </div>

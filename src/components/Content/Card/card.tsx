@@ -1,41 +1,45 @@
 import React from 'react';
 import Modelo3d from '../modelo3d/modelo3d';
+import skills from './skills.png'; // Ajusta la ruta según la estructura de tu proyecto
+let classTitle: string = "text-3xl font-bold  mb-14 mt-14 sm:w-5/12 px-4 w-full animate-fade-in-right dark:text-slate-200   "
+let classTitle2: string = "text-3xl font-bold sm:ml-auto  mb-14 mt-14 px-4 mr-20 sm:w-5/12 animate-fade-in-right dark:text-slate-200 flex sm:justify-end  "
 
-let classTitle: string = "text-3xl font-bold mb-4  sm:w-5/12 px-4 w-full animate-fade-in-right dark:text-slate-200  "
-let classTitle2: string = "text-3xl font-bold sm:ml-auto  mb-4 px-4 sm:w-5/12 animate-fade-in-right dark:text-slate-200 flex sm:justify-end  "
-
-let classContainerHover: string = "container hover:scale-105 transform transition-transform duration-300"
-let classCardHover: string = "w-full md:w-6/12 md:pr-5 mb-5  px-6 py-6  bg-white dark:bg-slate-700 dark:bg-opacity-80 bg-opacity-80 rounded-lg animate-expand-vertically animate-delay-700"
+let classContainerHover: string = "flex hover:scale-105 transform transition-transform duration-300"
+let classCardHover: string = "w-full flex md:w-6/12 md:pr-5 mb-24  px-6 py-6  bg-white dark:bg-slate-700 dark:bg-opacity-80 bg-opacity-80 rounded-lg animate-expand-vertically animate-delay-700"
 
 let classText: string = "text-lg dark:text-white "
-let classAnimatin: string = "flex flex-wrap px-8 hover:scale-105 transform transition-transform duration-300 "
+let classAnimatin: string = "flex flex-wrap  px-8 hover:scale-105 transform transition-transform duration-300 "
 let classAnimatin2: string = "flex flex-wrap px-8 justify-end hover:scale-105 transform transition-transform duration-300 "
 
 const ComponenteConModelo3D = () => {
   return (
 
-    <div className="container z-40 w-11/12 h-auto  mb-4 mt-28 bg-white bg-opacity-0 rounded-lg">
+    <div className="container z-40 w-11/12 h-auto  mb-4 mt-9 bg-white bg-opacity-0 rounded-lg">
       <div className="w-full  ">
         <Modelo3d />
       </div>
       <div className={classContainerHover}>
 
-        <h1 className={classTitle}>JUAN PABLO HEUSSER
+        <h1 className="text-3xl font-bold mb-14 sm:w-5/12 px-4 w-full animate-fade-in-right dark:text-slate-200   ">JUAN PABLO HEUSSER
           ESCAMILLA</h1>
       </div>
       <div className={classAnimatin}>
         <div className={classCardHover}>
-          <p className={classText}>
-            Desarrollador Full Stack con experiencia en Angular, Redux, NestJS, AWS ,
-            ERP(odoo) y MongoDB, utilizando JavaScript y TypeScript para construir
-            aplicaciones web robustas. Mi enfoque proactivo y habilidades de comunicación
-            efectiva me permiten colaborar exitosamente en equipos, contribuyendo al
-            éxito de proyectos, ya sea con las tecnologías antes mencionadas o con otros
-            frameworks de JavaScript y Python, gracias a mi adaptabilidad en ámbitos de
-            programación.
-          </p>
+          <div>
+
+            <p className={classText}>
+              Desarrollador Full Stack con experiencia en Angular, Redux, NestJS, AWS ,
+              ERP(odoo) y MongoDB, utilizando JavaScript y TypeScript para construir
+              aplicaciones web robustas. Mi enfoque proactivo y habilidades de comunicación
+              efectiva me permiten colaborar exitosamente en equipos, contribuyendo al
+              éxito de proyectos, ya sea con las tecnologías antes mencionadas o con otros
+              frameworks de JavaScript y Python, gracias a mi adaptabilidad en ámbitos de
+              programación.
+            </p>
+          </div>
         </div>
 
+        <img className=' h-60  w-auto ml-auto mr-auto hover:scale-125 transform transition-transform duration-300' src='https://cdn-icons-png.flaticon.com/512/1488/1488581.png'></img>
       </div>
 
 
@@ -44,7 +48,8 @@ const ComponenteConModelo3D = () => {
         <h1 className={classTitle2}>HABILIDADES</h1>
       </div>
       <div className={classAnimatin2}>
-        <div className={classCardHover}>
+      <img className=' h-60 w-auto mr-auto ml-auto mb-8 hover:scale-125 transform transition-transform duration-300' src={process.env.PUBLIC_URL + '/img/skills.png'} />
+       <div className={classCardHover}>
           <p className={classText}>
             Diseño de UI/UX: frameworks JavaScript, HTML5, CSS, Tailwind CSS y similares.
             Desarrollo Back-End: TypeScript (NestJS, Express), Python (Django).
@@ -75,13 +80,15 @@ const ComponenteConModelo3D = () => {
             de el negocio.
           </p>
         </div>
+        <img className=' h-60 w-auto mr-auto ml-auto mb-8 hover:scale-125 transform transition-transform duration-300' src={process.env.PUBLIC_URL + '/img/coding.png'} />
 
       </div>
       <div className={classContainerHover}>
-
         <h1 className={classTitle2}>2022- 2023 | DESAROLLO FREE LANCE - PYTHON</h1>
+
       </div>
       <div className={classAnimatin2}>
+        <img className=' h-60 w-auto mr-auto ml-auto mb-8 hover:scale-125 transform transition-transform duration-300' src={process.env.PUBLIC_URL + '/img/freelance.png'} />
         <div className={classCardHover}>
           <p className={classText}>
             Como desarrollador freelance en Django, he colaborado con particulares para
@@ -106,6 +113,8 @@ const ComponenteConModelo3D = () => {
             visibilidad de la marca.
           </p>
         </div>
+        <div></div>
+        <img className=' h-60 w-auto mr-auto ml-auto mt-0 mb-8 hover:scale-125 transform transition-transform duration-300 ' src={process.env.PUBLIC_URL + '/img/cloud.png'} />
 
       </div>
 
