@@ -2,7 +2,7 @@
   "name": "reactporfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://heusser-dev.github.io/reactporfolio",
+  "homepage": "https://heusser-dev.github.io/ReactPorfolio/",
   "dependencies": {
     "@ant-design/icons": "^5.3.0",
     "@midudev/tailwind-animations": "^0.0.7",

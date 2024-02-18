@@ -60,7 +60,7 @@ const Modelo3d = () => {
         const model = scene.children.find((child) => child.type === "Group");
         if (model) {
                     model.rotation.y += 0.003;
-                    model.rotation.x += 0.0008; // Adjust the rotation speed as needed
+                    model.rotation.x += 0.0008  ; // Adjust the rotation speed as needed
                     // Adjust the rotation speed as needed
         }
       }
