@@ -1,0 +1,11 @@
+Model Information:
+* title:	Planet blue
+* source:	https://sketchfab.com/3d-models/planet-blue-c91cb6e33dce4a93ae242faf49f4c6d7
+* author:	pabllo1234 (https://sketchfab.com/pabllo1234)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Planet blue" (https://sketchfab.com/3d-models/planet-blue-c91cb6e33dce4a93ae242faf49f4c6d7) by pabllo1234 (https://sketchfab.com/pabllo1234) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
