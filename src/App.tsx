@@ -63,16 +63,18 @@ const App: React.FC = () => {
             </Routes>   
 
         </div>
-        <div className="text-center fixed z-50 py-1 bottom-0 container border min-w-full bg-white">
-          <a className="" href='https://github.com/heusser-dev'>
+        <div className="fixed z-50 text-center py-1 bottom-0 container border min-w-full bg-white">
+          <a className='p-2' href='https://github.com/heusser-dev'> 
+
+            <GithubOutlined style={{ fontSize: '24px' }} />
+          </a>
+          <a className="px-2" >
 
             Created by heusser-dev
-            {" " + new Date().getFullYear()}
-            <GithubOutlined style={{ fontSize: '24px', marginLeft: "8px", position: 'absolute' }} />
           </a>
-          <a className="" href='https://www.linkedin.com/in/juan-pablo-heusser-escamilla-9a341721a/'>
+          <a className="p-2" href='https://www.linkedin.com/in/juan-pablo-heusser-escamilla-9a341721a/'>
 
-            <LinkedinOutlined style={{ fontSize: '24px', marginLeft: "40px", position: 'absolute' }} />
+            <LinkedinOutlined style={{ fontSize: '24px', }} />
           </a>
 
         </div>
