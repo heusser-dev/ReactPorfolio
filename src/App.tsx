@@ -44,7 +44,7 @@ const App: React.FC = () => {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
   };
   return (
-    <div className="">
+    <div className="" style={{}}>
       <Router>
         <div className='bt-0'>
           <CustomHeader onChangeTheme={handleChangeTheme} />
@@ -58,8 +58,10 @@ const App: React.FC = () => {
             <Route path="blog" element={<Blog />} />
             <Route path="about" element={<About />} />
             <Route path="demos" element={<Demos />}>
-              <Route path="qrscanner" element={<QrScanner />} />
+              <Route path="qrscanner" element={< QrScanner />} />
             </Route>          
+            <Route path="qrscanner" element={< QrScanner />} />
+
             </Routes>   
 
         </div>
