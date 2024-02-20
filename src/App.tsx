@@ -64,7 +64,7 @@ const App: React.FC = () => {
 
         </div>
         <div className="fixed z-50 text-center py-1 bottom-0 container border min-w-full bg-white">
-          <a className='p-2' href='https://github.com/heusser-dev'> 
+          <a className='p-2' href='https://github.com/heusser-dev' target="_blank"> 
 
             <GithubOutlined style={{ fontSize: '24px' }} />
           </a>
@@ -72,7 +72,7 @@ const App: React.FC = () => {
 
             Created by heusser-dev
           </a>
-          <a className="p-2" href='https://www.linkedin.com/in/juan-pablo-heusser-escamilla-9a341721a/'>
+          <a className="p-2" href='https://www.linkedin.com/in/juan-pablo-heusser-escamilla-9a341721a/' target="_blank">
 
             <LinkedinOutlined style={{ fontSize: '24px', }} />
           </a>
