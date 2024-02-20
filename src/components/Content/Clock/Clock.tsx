@@ -27,7 +27,7 @@ class Reloj extends React.Component<Props, State> {
 
   render() {
     return (
-      <div className="md:fixed md:flex fixed text-sm  md:text-lg md:top-0 top-0 right-0 bg-white rounded-2xl mt-1 dark:bg-custom-blue  dark:text-white hover:scale-125 transform transition-transform duration-300 ">
+      <div className="md:fixed md:flex fixed text-base  md:text-lg md:top-0 top-1 right-1 bg-white rounded-2xl mt-1 dark:bg-custom-blue  dark:text-white hover:scale-125 transform transition-transform duration-300 ">
         <h1>{this.state.hora.toLocaleTimeString()}</h1>
       </div>
     );
