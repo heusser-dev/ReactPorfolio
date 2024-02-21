@@ -20,8 +20,7 @@ const Blog: React.FC = () => {
 
   return (
     <div className=' z-40 mt-16 px-10 '>
-      <h1 className='text-2xl text-red-700'>Mi Blog</h1>
-      <Article content={markdownContent} />
+      <Article />
     </div>
   );
 };

@@ -1,33 +1,56 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Modelo3d from '../modelo3d/modelo3d';
 import skills from './skills.png'; // Ajusta la ruta según la estructura de tu proyecto
+import Button from 'antd/es/button';
+import { FilePdfOutlined } from '@ant-design/icons';
+
 let classTitle: string = "text-3xl font-bold  mb-14 mt-14 sm:w-5/12 px-4 w-full animate-fade-in-right dark:text-slate-200   "
 let classTitle2: string = "text-3xl font-bold sm:ml-auto  mb-14 mt-14 px-4 mr-20 sm:w-5/12 animate-fade-in-right dark:text-slate-200 flex sm:justify-end  "
 
 let classContainerHover: string = "flex hover:scale-105 transform transition-transform duration-300"
-let classCardHover: string = "w-full flex md:w-6/12 md:pr-5 mb-24  px-6 py-6  bg-white dark:bg-slate-700 dark:bg-opacity-80 bg-opacity-80 rounded-lg animate-expand-vertically animate-delay-700"
+let classCardHover: string = "w-full flex md:w-7/12 md:pr-5 mb-24  px-6 py-6  bg-white dark:bg-slate-700 dark:bg-opacity-80 bg-opacity-80 rounded-lg animate-expand-vertically animate-delay-700"
 
 let classText: string = "text-lg dark:text-white "
 let classAnimatin: string = "flex flex-wrap  px-8 hover:scale-105 transform transition-transform duration-300 "
 let classAnimatin2: string = "flex flex-wrap px-8 justify-end hover:scale-105 transform transition-transform duration-300 "
 
+
+
 const ComponenteConModelo3D = () => {
+
+  const audioRef = useRef<HTMLAudioElement>(null);
+
+  const playSound = () => {
+    if (audioRef.current) {
+      audioRef.current.play();
+    }
+  }
+    
+  const dowloadPdf= ()=> {
+    const pdfFilePath = '/assets/CV-HeusserEscamilla.pdf';
+    const link = document.createElement('a');
+    link.href = pdfFilePath;
+    link.download = 'CV-Heusser-Escamilla.pdf';
+    link.click();
+    playSound();
+  }
   return (
 
+   
     <div className="container z-40 w-11/12 h-auto  mb-4 mt-9 bg-white bg-opacity-0 rounded-lg">
       <div className="w-full  ">
-        {/* <Modelo3d /> */}
+        <Modelo3d />
       </div>
       <div className={classContainerHover}>
 
-        <h1 className="text-3xl font-bold mb-14 sm:w-5/12 px-4 w-full animate-fade-in-right dark:text-slate-200   ">JUAN PABLO HEUSSER
+        <h1 className="text-3xl font-bold mb-14 sm:w-5/12 mt-16 px-4 w-full animate-fade-in-right dark:text-slate-200   ">JUAN PABLO HEUSSER
           ESCAMILLA</h1>
       </div>
       <div className={classAnimatin}>
         <div className={classCardHover}>
           <div>
 
-            <p className={classText}>
+            <p className={classText + "mb-8"}>
               Desarrollador Full Stack con experiencia en Angular, Redux, NestJS, AWS ,
               ERP(odoo) y MongoDB, utilizando JavaScript y TypeScript para construir
               aplicaciones web robustas. Mi enfoque proactivo y habilidades de comunicación
@@ -36,10 +59,19 @@ const ComponenteConModelo3D = () => {
               frameworks de JavaScript y Python, gracias a mi adaptabilidad en ámbitos de
               programación.
             </p>
+            <audio ref={audioRef}>
+        <source src="/assets/hero_simple-celebration-03.wav" type="audio/wav" />
+        Tu navegador no soporta el elemento de audio.
+      </audio>
+      
+        <Button type="dashed" onClick={dowloadPdf} icon={<FilePdfOutlined  />} size='large' className='dark:bg-white bg-custom-blue bg-opacity-30 mx-auto w-full  hover:scale-105 transform transition-transform duration-300'>
+        Descargar CV
+      </Button>
           </div>
         </div>
 
-        <img className=' h-60  w-auto ml-auto mr-auto hover:scale-125 transform transition-transform duration-300' src='https://cdn-icons-png.flaticon.com/512/1488/1488581.png'></img>
+        <img className=' h-60  w-auto ml-auto mr-auto hover:scale-125 transform transition-transform duration-300'  src='https://cdn-icons-png.flaticon.com/512/1488/1488581.png'></img>
+      
       </div>
 
 
