@@ -12,7 +12,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Blog from './pages/Blog';
 import Demos from './pages/Demos';
 import About from './pages/Contacto';
-import QRScanner from './components/Apps/Qrscanner/Qrscanner';
 import GithubOutlined from '@ant-design/icons/lib/icons/GithubOutlined';
 import LinkedinOutlined from '@ant-design/icons/lib/icons/LinkedinOutlined';
 import QrScanner from './components/Apps/Qrscanner/Qrscanner';
@@ -57,14 +56,19 @@ const App: React.FC = () => {
             <Route path="/" element={<ComponenteConModelo3D />} />
             <Route path="blog" element={<Blog />} />
             <Route path="about" element={<About />} />
-            <Route path="demos" element={<Demos />}>
-              <Route path="qrscanner" element={< QrScanner />} />
-            </Route>          
-            <Route path="qrscanner" element={< QrScanner />} />
+            <Route path="demos" element={<Demos />}/>
+              {/* <Route path="qrscanner" element={< QrScanner />} />
+            </Route>           */}
+            <Route path="demos/qrscanner" element={< QrScanner />} />
 
             </Routes>   
 
         </div>
+        <div className='mb-32'>
+
+        <img className='  bg-transparent dark:bg-blue-950 dark:bg-opacity-60 rounded-3xl h-52 w-auto mr-auto ml-auto m hover:scale-150 transform transition-transform duration-300' src={process.env.PUBLIC_URL + '/img/logoHd.png'} />
+        </div>
+
         <div className="fixed z-50 text-center py-1 bottom-0 container border min-w-full bg-white">
           <a className='p-2' href='https://github.com/heusser-dev' target="_blank"> 
 

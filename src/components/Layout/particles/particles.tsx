@@ -50,7 +50,7 @@ const ParticleBackground: React.FC<ChildProps>  = ({ theme }) => {
                         value: colorStringDarkMode,
                     },
                 },
-                fpsLimit: 120,
+                fpsLimit: 30,
                 interactivity: {
                     events: {
                         onClick: {
@@ -65,7 +65,7 @@ const ParticleBackground: React.FC<ChildProps>  = ({ theme }) => {
                     },
                     modes: {
                         push: {
-                            quantity: 4,
+                            quantity: 5,
                         },
                         repulse: {
                             distance: 200,
@@ -99,7 +99,7 @@ const ParticleBackground: React.FC<ChildProps>  = ({ theme }) => {
                             enable: true,
                             area: 800,
                         },
-                        value: 80,
+                        value: 60,
                     },
                     opacity: {
                         value: 0.5,
