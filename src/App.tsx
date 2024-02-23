@@ -66,7 +66,7 @@ const App: React.FC = () => {
         </div>
         <div className='mb-32'>
 
-        <img className='  bg-transparent dark:bg-blue-950 dark:bg-opacity-60 rounded-3xl h-52 w-auto mr-auto ml-auto m hover:scale-150 transform transition-transform duration-300' src={process.env.PUBLIC_URL + '/img/logosinfondo.png'} />
+        <img className='  bg-transparent dark:bg-blue-950 dark:bg-opacity-60 rounded-3xl h-52 w-auto mr-auto ml-auto m hover:scale-125 transform transition-transform duration-300' src={process.env.PUBLIC_URL + '/img/logoSinfondo.png'} />
         </div>
 
         <div className="fixed z-50 text-center py-1 bottom-0 container border min-w-full bg-white">
