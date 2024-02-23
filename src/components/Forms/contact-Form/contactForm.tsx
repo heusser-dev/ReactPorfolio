@@ -27,6 +27,13 @@ const ContactForm: React.FC = () => {
   const handleSubmit = (): void => {
     // Aquí puedes enviar los datos del formulario a tu servidor o hacer cualquier otra cosa con ellos
     console.log(formData);
+  
+    // Crear el enlace de WhatsApp con los datos del formulario
+    const whatsappLink = `https://api.whatsapp.com/send?phone=56977669354&text=Hola%20mi%20nombre%20es%20${formData.name}%20mi%20email%20es%20${formData.email}%20y%20te%20escribo%20para%20${formData.message}`;
+  
+    // Abrir el enlace en una nueva pestaña
+    window.open(whatsappLink);
+  
     // Limpia el formulario después de enviar
     form.resetFields();
   };
