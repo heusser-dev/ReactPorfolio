@@ -37,7 +37,7 @@ const ComponenteConModelo3D = () => {
   return (
 
    
-    <div className="container z-40 w-11/12 h-auto  mb-4 mt-9 bg-white bg-opacity-0 rounded-lg">
+    <div className="container z-40 md:w-11/12 w-full h-auto  mb-4 mt-9 bg-white bg-opacity-0 rounded-lg">
       <div className="w-full  ">
         <Modelo3d />
       </div>
