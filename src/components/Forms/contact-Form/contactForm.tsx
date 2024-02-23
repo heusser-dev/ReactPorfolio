@@ -39,7 +39,7 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className='dark:bg-white dark:bg-opacity-80  bg-custom-blue bg-opacity-30  md:w-8/12  mx-auto rounded-md '>
+    <div className='dark:bg-white dark:bg-opacity-90  bg-custom-blue bg-opacity-90 md:w-8/12  mx-auto rounded-md '>
     <Form form={form} onFinish={handleSubmit} className='p-6 animate-blurred-fade-in '       layout={"vertical"}>
       <Form.Item label="Nombre" name="name" rules={[{ required: true, message: 'Por favor ingrese su nombre' }]}>
         <Input name="name" value={formData.name} onChange={handleChange} />
@@ -51,7 +51,7 @@ const ContactForm: React.FC = () => {
         <Input.TextArea name="message" value={formData.message} onChange={handleChange} />
       </Form.Item>
       <Form.Item className='text-center'> {/* Agrega la clase 'text-center' para centrar horizontalmente el botón */}
-              <Button type="dashed" htmlType="submit" icon={<SendOutlined />} size='large' className='bg-white bg-opacity-80 mx-auto w-10/12  hover:scale-105 transform transition-transform duration-300'>
+              <Button type="default" htmlType="submit" icon={<SendOutlined />} size='large' className='bg-white dark:text-white dark:bg-custom-blue dark:bg-opacity-80 mx-auto w-10/12 b-2 hover:scale-105 transform transition-transform duration-300'>
           Enviar
         </Button>
       </Form.Item>

@@ -64,8 +64,8 @@ function Article() {
     <div className="mb-20">
       {articles.map((article, index) => (
         <div key={index} className="mb-8">
-          <h1 className="text-3xl dark:text-slate-200 font-bold mb-4 hover:scale-105 transform transition-transform duration-300">{article.titulo}</h1>
-          <div className="bg-white dark:bg-slate-700 dark:bg-opacity-80 bg-opacity-80 mb:p-6 p-6  rounded-lg">
+          <h1 className="text-3xl dark:text-slate-200 font-bold mb-4  ml-4 hover:scale-105 transform transition-transform duration-300">{article.titulo}</h1>
+          <div className="bg-white dark:bg-slate-700 dark:bg-opacity-80 bg-opacity-80 md:p-10 p-6  rounded-lg">
 
           <h2 className="text-lg dark:text-white font-semibold mb-2 hover:scale-105 transform transition-transform duration-300">{article.subtitulo}</h2>
           <div className="space-y-4">
