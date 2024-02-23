@@ -65,7 +65,7 @@ const ParticleBackground: React.FC<ChildProps>  = ({ theme }) => {
                     },
                     modes: {
                         push: {
-                            quantity: 5,
+                            quantity: 3,
                         },
                         repulse: {
                             distance: 200,
@@ -99,7 +99,7 @@ const ParticleBackground: React.FC<ChildProps>  = ({ theme }) => {
                             enable: true,
                             area: 800,
                         },
-                        value: 60,
+                        value: 40,
                     },
                     opacity: {
                         value: 0.5,
