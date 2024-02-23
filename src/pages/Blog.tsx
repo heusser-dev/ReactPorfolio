@@ -19,7 +19,7 @@ const Blog: React.FC = () => {
   }, []);
 
   return (
-    <div className=' z-40 mt-16 px-10 '>
+    <div className=' z-40 mt-16 md:px-10  px-4'>
       <Article />
     </div>
   );

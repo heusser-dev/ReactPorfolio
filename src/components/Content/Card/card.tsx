@@ -89,8 +89,7 @@ const ComponenteConModelo3D = () => {
             Servicios de AWS (S3, EC2, Glue).
             Control de versiones con Git (GitHub).
             Resolución de problemas, aprendizaje continuo, gestión del tiempo,
-            comunicación, resiliencia, empatía y creatividadScript y Python, gracias a mi adaptabilidad en ámbitos de
-            programación.
+            comunicación, resiliencia, empatía y creatividad.
           </p>
         </div>
 
